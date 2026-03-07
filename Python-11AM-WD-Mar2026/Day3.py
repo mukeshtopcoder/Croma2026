@@ -133,12 +133,4 @@ print( True + True*False )
 print( True*True + False*False )
 print( True + ( 10>5 and 20>50 ) )
 
-
-
 """
-
-
-
-
-
-
