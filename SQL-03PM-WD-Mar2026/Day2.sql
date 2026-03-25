@@ -37,6 +37,40 @@ CREATE TABLE student(
 student_id INT ,
 student_name TEXT , 
 student_address TEXT ,
-student_mobile TEXT
+student_mobile TEXT 
 );
 
+# ALTER
+# How to add a new column?
+# ALTER TABLE table_name ADD COLUMN col_name DType;
+ALTER TABLE student ADD COLUMN student_email TEXT;
+
+# How to describe a table?
+# DESCRIBE table_name;
+DESCRIBE student;
+
+# How to delete a column in a Table
+ALTER TABLE student DROP COLUMN student_mobile;
+
+# How to change the Dtype of a column?
+ALTER TABLE student MODIFY student_id TEXT;
+
+DROP TABLE student;
+
+# SHOW tables;
+SHOW TABLES;
+CREATE TABLE trainer(
+tid INT, 
+tname TEXT ,
+taddress TEXT
+);
+
+ALTER TABLE trainer ADD COLUMN tmobile TEXT;
+DESCRIBE trainer;
+
+ALTER TABLE trainer MODIFY tmobile BIGINT;
+
+ALTER TABLE trainer DROP COLUMN taddress;
+
+DROP TABLE trainer;
+DROP DATABASE school;
